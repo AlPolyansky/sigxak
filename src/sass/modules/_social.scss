@@ -1,0 +1,18 @@
+.social{
+	&__list{
+		margin: 0;
+		padding: 0;
+		text-align: right;
+		padding-top: rem(27px);
+	}
+	&__item{
+		list-style-type: none;
+		display: inline-block;
+		margin-right: rem(10px);
+	}
+	&__link{
+		display: block;
+		width: rem(51px);
+		height: rem(51px);
+	}
+}

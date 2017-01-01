@@ -1,0 +1,16 @@
+.footer{
+	background-color: darken(saturate(adjust-hue($colorMain, -0.0925), 2.0101), 7.0588);
+	overflow: hidden;
+	padding-top: rem(117px);
+	padding-bottom: rem(128px);
+	@include clear();
+	&__part{
+		@include col(6);
+	}
+	&__address{
+		font-style: normal;
+		color: $colorLight;
+		@include col(4);
+		padding: 0 rem(37px);
+	}
+}

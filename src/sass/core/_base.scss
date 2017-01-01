@@ -33,7 +33,8 @@ body{
 }
 
 ::selection {
-	background: $colorMain; 
+	background: $colorMain;
+	color: $colorLight;
 }
 
 
