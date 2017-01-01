@@ -1,0 +1,16 @@
+.s-portfolio{
+	&__menu{
+		background-color: transparent;
+		margin-bottom: rem(87px);
+		.menu__link{
+			color: $colorDark;
+			font-weight: 800;
+		}
+		.menu__item{
+			color: $colorDark;
+			font-weight: 800;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+}

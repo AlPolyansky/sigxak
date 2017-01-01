@@ -40,6 +40,8 @@
   "dependencies": {
     "flexibility": "^2.0.1",
     "flickity": "^2.0.5",
-    "modernizr": "^3.3.1"
+    "isotope-layout": "^3.0.1",
+    "modernizr": "^3.3.1",
+    "page-scroll-to-id": "^1.5.5"
   }
 }

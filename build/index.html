@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="wrapper" id="home">
-      <header class="header">
+      <header class="header" id="home">
         <div class="header__content title--light container">
           <h1 class="header__title title title--size-xl">Welcome To Sigxak</h1>
           <div class="header__desk title--size-m">Creative Fasion Stylist</div>
@@ -25,14 +25,14 @@
       </header>
       <div class="menu">
         <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="#" title="Home">Home</a></li>
-          <li class="menu__item"><a class="menu__link" href="#" title="About">About</a></li>
-          <li class="menu__item"><a class="menu__link" href="#" title="Portfolio">Portfolio</a></li>
-          <li class="menu__item"><a class="menu__link" href="#" title="Blog">Blog</a></li>
-          <li class="menu__item"><a class="menu__link" href="#" title="Contact">Contact</a></li>
+          <li class="menu__item"><a class="menu__link" href="#home" title="Home">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#about" title="About">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#portfolio" title="Portfolio">Portfolio</a></li>
+          <li class="menu__item"><a class="menu__link" href="#blog" title="Blog">Blog</a></li>
+          <li class="menu__item"><a class="menu__link" href="#contact" title="Contact">Contact</a></li>
         </ul>
       </div>
-      <section class="section s-about">
+      <section class="section s-about" id="about">
         <div class="container">
           <h2 class="title title--size-m title--dots section__title">About</h2>
           <h3 class="title section__descr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</h3>
@@ -122,13 +122,79 @@
           </div>
         </div>
       </section>
+      <section class="section s-portfolio" id="portfolio">
+        <div class="container">
+          <h2 class="title title--size-m title--dots section__title">Portfolio</h2>
+          <div class="menu s-portfolio__menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="#" title="Show All" data-filter="*">Show All</a></li>
+              <li class="menu__item"><a class="menu__link" href="#" title="Illustration" data-filter=".illustration">Illustration</a></li>
+              <li class="menu__item"><a class="menu__link" href="#" title="Motion Graphics" data-filter=".graphics">Motion Graphics</a></li>
+              <li class="menu__item"><a class="menu__link" href="#" title="PhotoGraphy" data-filter=".photography">PhotoGraphy</a></li>
+              <li class="menu__item"><a class="menu__link" href="#" title="Web design" data-filter=".webDesign">Web design</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tile">
+          <ul class="tile__list">
+            <li class="tile__item webDesign"><img class="tile__img" src="./img/room-1.jpg">
+              <div class="tile__content">
+                <div class="tile__name">App Landing Page</div>
+                <div class="tile__category">Web design</div><i class="tile__ico icon i-glyph"></i>
+              </div>
+            </li>
+            <li class="tile__item webDesign"><img class="tile__img" src="./img/room-2.jpg">
+              <div class="tile__content">
+                <div class="tile__name">App Landing Page</div>
+                <div class="tile__category">Web design</div><i class="tile__ico icon i-glyph"></i>
+              </div>
+            </li>
+            <li class="tile__item graphics"><img class="tile__img" src="./img/room-3.jpg">
+              <div class="tile__content">
+                <div class="tile__name">App Landing Page</div>
+                <div class="tile__category">Motion Graphics</div><i class="tile__ico icon i-glyph"></i>
+              </div>
+            </li>
+            <li class="tile__item graphics"><img class="tile__img" src="./img/room-4.jpg">
+              <div class="tile__content">
+                <div class="tile__name">App Landing Page</div>
+                <div class="tile__category">Motion Graphics</div><i class="tile__ico icon i-glyph"></i>
+              </div>
+            </li>
+            <li class="tile__item photography"><img class="tile__img" src="./img/room-5.jpg">
+              <div class="tile__content">
+                <div class="tile__name">App Landing Page</div>
+                <div class="tile__category">PhotoGraphy</div><i class="tile__ico icon i-glyph"></i>
+              </div>
+            </li>
+            <li class="tile__item photography"><img class="tile__img" src="./img/room-6.jpg">
+              <div class="tile__content">
+                <div class="tile__name">App Landing Page</div>
+                <div class="tile__category">PhotoGraphy</div><i class="tile__ico icon i-glyph"></i>
+              </div>
+            </li>
+            <li class="tile__item illustration"><img class="tile__img" src="./img/room-7.jpg">
+              <div class="tile__content">
+                <div class="tile__name">App Landing Page</div>
+                <div class="tile__category">Illustration</div><i class="tile__ico icon i-glyph"></i>
+              </div>
+            </li>
+            <li class="tile__item illustration"><img class="tile__img" src="./img/room-8.jpg">
+              <div class="tile__content">
+                <div class="tile__name">App Landing Page</div>
+                <div class="tile__category">Illustration</div><i class="tile__ico icon i-glyph"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
       <div class="menu">
         <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="#" title="Home">Home</a></li>
-          <li class="menu__item"><a class="menu__link" href="#" title="About">About</a></li>
-          <li class="menu__item"><a class="menu__link" href="#" title="Portfolio">Portfolio</a></li>
-          <li class="menu__item"><a class="menu__link" href="#" title="Blog">Blog</a></li>
-          <li class="menu__item"><a class="menu__link" href="#" title="Contact">Contact</a></li>
+          <li class="menu__item"><a class="menu__link" href="#home" title="Home">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#about" title="About">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#portfolio" title="Portfolio">Portfolio</a></li>
+          <li class="menu__item"><a class="menu__link" href="#blog" title="Blog">Blog</a></li>
+          <li class="menu__item"><a class="menu__link" href="#contact" title="Contact">Contact</a></li>
         </ul>
       </div>
     </div>

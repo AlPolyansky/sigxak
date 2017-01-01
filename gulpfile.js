@@ -104,6 +104,8 @@ var scssLibs = [
 var jsLibs = [
   // Пример:  path.sourse.folder + '/jquery/dist/jquery.js',
   path.sourse.libs + '/jquery/dist/jquery.min.js',
+  'node_modules/page-scroll-to-id/jquery.malihu.PageScroll2id.js',
+  'node_modules/isotope-layout/dist/isotope.pkgd.min.js',
 ];
 
 
