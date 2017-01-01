@@ -1,0 +1,15 @@
+.s-blog{
+	background-color: $colorBody;
+	padding-top: rem(113px);
+	&__articles{
+		display: inline-flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	.article{
+		margin-right: rem(20px);
+		&:nth-child(4n+4){
+			margin-right: 0;
+		}
+	}
+}

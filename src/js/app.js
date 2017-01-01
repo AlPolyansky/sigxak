@@ -1,9 +1,9 @@
 $(document).ready(function(){
 	// scroll to id
-	/*$("a[href*='#']").mPageScroll2id({
+	$(".menu--scroll").find('.menu__link').mPageScroll2id({
   	scrollSpeed: 500,
   	pageEndSmoothScroll: false
-	});*/
+	});
 
 	// isotope
 
