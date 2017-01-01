@@ -1,0 +1,19 @@
+.icon{
+	&__list{
+		padding: 0;
+		margin: 0;
+	}
+	&__item{
+		list-style-type: none;
+		margin: 0;
+		display: inline-block;
+		margin-right: rem(15px);
+		&:last-child{
+			margin-right: none;
+		}
+	}
+	&__link{
+		display: block;
+		text-decoration: none;
+	}
+}

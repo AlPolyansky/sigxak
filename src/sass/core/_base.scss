@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Signika:400,600,700&subset=cyrillic');
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+$fontMain: 'Open Sans', sans-serif;
+$fontExtra: 'Signika', sans-serif;
+
+$colorBase: #000000;
+$colorDark: lighten(saturate(adjust-hue($colorBase, 264.0000), 34.8837), 8.4314);
+$colorLight: #ffffff;
+$colorBody: darken(saturate(adjust-hue($colorLight, 170.5263), 100.0000), 3.7255);
+$colorMain: #00a388;
+
+
+html{
+	font-size: 100%;
+}
+
+html,body{
+	height: 100%;
+}
+
+body{
+	font-family: $fontMain;
+	font-weight: 400;
+	color: $colorDark;
+}
+
+.container{
+	@include container(rem(1400px));
+}
+
+::selection {
+	background: $colorMain; 
+}
+
+
+
+
+
+

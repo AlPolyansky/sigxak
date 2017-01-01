@@ -1,0 +1,27 @@
+.s-about{
+	padding-top: rem(105px);
+	&__desk{
+		@include clear();
+		text-align: left;
+		line-height: rem(30px);
+	}
+	&__peoples{
+		@include col(6,53px);
+		&:first-child{
+			padding-left: 0;
+		}
+		&:last-child{
+			padding-right: 0;
+		}
+	}
+	&__text{
+		margin-bottom: rem(107px);
+	}
+	&__users{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__user{
+		
+	}
+}

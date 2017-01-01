@@ -1,0 +1,69 @@
+.user{
+	width: 100%;
+	color: $colorLight;
+	transition: background-color .2s;
+	max-width: rem(271px);
+	padding-bottom: rem(25px);
+	&__avatar{
+		max-height: rem(268px);
+		overflow: hidden;
+		margin-bottom: rem(31px);
+	}
+	&__img{
+		width: 100%;
+		display: block;
+	}
+	&__name{
+		display: block;
+		color: $colorBase;
+		text-align: center;
+		font-size: rem(18px);
+		margin-bottom: rem(30px);
+		font-family: $fontExtra;
+		transition: color .2s;
+		&:after,&:before{
+			content: '//';
+			position: relative;
+		}
+		&:after{
+			left: em(12px);
+		}
+		&:before{
+			right: em(12px);
+		}
+	}
+	&__work{
+		text-align: center;
+		transition: color .2s;
+		font-family: $fontExtra;
+		margin-bottom: rem(30px);
+		color: $colorBase;
+	}
+	&__content{
+		padding: 0 rem(22px);
+
+	}
+	&__text{
+		margin: 0;
+		margin-bottom: rem(34px);
+		visibility: hidden;
+		line-height: rem(21px);
+	}
+	&__icons{
+		text-align: center;
+		visibility: hidden;
+		transition: visibility .2s;
+	}
+}
+
+.user{
+	&:hover{
+		background-color: $colorMain;
+		.user__name,.user__work{
+			color: $colorLight;
+		}
+		.user__text,.user__icons{
+			visibility: visible;
+		}
+	}
+}

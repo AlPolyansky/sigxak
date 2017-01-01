@@ -1,0 +1,34 @@
+.menu{
+	display: block;
+	width: 100%;
+	background-color: $colorMain;
+	text-align: center;
+	&__list{
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+	}
+	&__item{
+		display: inline-block;
+		text-decoration: none;
+		padding: rem(26px) 0;
+		color: darken(saturate(adjust-hue($colorLight, 120.0000), 3.7037), 5.2941);
+		margin-right: rem(15px);
+		&:after{
+			content: '//';
+			display: inline-block;
+			margin-left: rem(15px);
+		}
+		&:last-child{
+			&:after{
+				display: none;
+			}
+		}
+	}
+	&__link{
+		text-decoration: none;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: darken(saturate(adjust-hue($colorLight, 120.0000), 3.7037), 5.2941);
+	}
+}

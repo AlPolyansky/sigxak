@@ -1,0 +1,35 @@
+.title{
+	font-family: $fontExtra;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+	display: block;
+	text-align: center;
+	position: relative;
+}
+
+.title--size-m{
+	font-size: rem(48px);
+}
+
+.title--size-xl{
+	font-size: rem(108px);
+}
+
+.title--light{
+	color: darken(saturate(adjust-hue($colorLight, 120.0000), 3.7037), 5.2941);
+}
+
+.title--dots{
+	display: inline-block;
+	&:after{
+		content: '...';
+		display: block;
+		bottom: -40%;
+		position: absolute;
+		color: currentColor;
+		font-size: em(12px);
+		font-weight: inherit;
+		width: 100%;
+	}
+}

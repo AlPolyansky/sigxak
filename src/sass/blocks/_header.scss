@@ -1,0 +1,23 @@
+.header{
+	height: 100vh;
+	overflow: hidden;
+	background-image: url("../img/header.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	background-position: center;
+	&__content{
+		@include center();
+		text-align: center;
+	}
+	&__title{
+		font-weight: 400;
+		margin-bottom: em(7px);
+	}
+	&__desk{
+		margin-bottom: em(8px);
+	}
+	&__info{
+		font-weight: 900;
+	}
+}
