@@ -10,6 +10,9 @@
 
 .title--size-m{
 	font-size: rem(48px);
+	@include apply-to($xsmall,max){
+		font-size: rem(30px);
+	}
 }
 
 .title--size-xl{

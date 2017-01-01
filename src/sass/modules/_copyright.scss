@@ -6,4 +6,7 @@
 	font-size: rem(14px);
 	text-transform: uppercase;
 	font-family: $fontExtra;
+	@include apply-to($xsmall,max){
+		font-size: rem(12px);
+	}
 }

@@ -11,5 +11,10 @@
 		font-size: rem(18px);
 		text-transform: uppercase;
 		margin-bottom: rem(56px);
+		line-height: rem(22px);
+		@include apply-to($xsmall,max){
+			font-size: rem(14px);
+		}
 	}
+
 }

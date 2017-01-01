@@ -14,6 +14,10 @@ $colorBody: darken(saturate(adjust-hue($colorLight, 170.5263), 100.0000), 3.7255
 $colorMain: #00a388;
 
 
+$medium : 1200px;
+$small : 768px;
+$xsmall : 479px;
+
 html{
 	font-size: 100%;
 }
@@ -30,11 +34,23 @@ body{
 
 .container{
 	@include container(rem(1400px));
+	@include apply-to($medium,max){
+		padding: 0 rem(40px);
+	}
+	@include apply-to($small,max){
+		padding: 0 rem(20px);
+	}
 }
 
 ::selection {
 	background: $colorMain;
 	color: $colorLight;
+}
+
+.map{
+	@include apply-to($xsmall,max){
+		display: none;
+	}
 }
 
 

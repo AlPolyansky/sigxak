@@ -4,6 +4,9 @@
 	transition: background-color .2s;
 	max-width: rem(271px);
 	padding-bottom: rem(25px);
+	@include apply-to($xsmall,max){
+		max-width: 100%;
+	}
 	&__avatar{
 		max-height: rem(268px);
 		overflow: hidden;
@@ -48,11 +51,18 @@
 		margin-bottom: rem(34px);
 		visibility: hidden;
 		line-height: rem(21px);
+		@include apply-to($xsmall,max){
+			visibility: visible;
+			color: $colorBase;
+		}
 	}
 	&__icons{
 		text-align: center;
 		visibility: hidden;
 		transition: visibility .2s;
+		@include apply-to($xsmall,max){
+			display: none;
+		}
 	}
 }
 
@@ -64,6 +74,11 @@
 		}
 		.user__text,.user__icons{
 			visibility: visible;
+		}
+		.user__text{
+			@include apply-to($xsmall,max){
+				color: $colorLight;
+			}
 		}
 	}
 }

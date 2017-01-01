@@ -19,6 +19,9 @@ $test : -78%;
 		margin-bottom: rem(32px);
 		display: block;
 		position: relative;
+		@include apply-to($xsmall,max){
+			margin-bottom: rem(20px);
+		}
 		&:after,&:before{
 			content: '';
 			display: block;
@@ -70,10 +73,17 @@ $test : -78%;
 		font-size: rem(29px);
 		font-weight: 400;
 		line-height: em(23px);
+		@include apply-to($xsmall,max){
+			font-size: rem(22px);
+			line-height: rem(22px);
+		}
 	}
 	&__text{
 		font-size: rem(16px);
 		font-weight: 400;
 		line-height: em(28px);
+		@include apply-to($xsmall,max){
+			line-height: em(22px);
+		}
 	}
 }

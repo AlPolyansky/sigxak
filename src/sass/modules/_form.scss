@@ -14,6 +14,11 @@
 		max-width: rem(560px);
 		margin-right: rem(41px);
 		width: 100%;
+		@include apply-to($medium,max){
+			max-width: 90%;
+			float: none;
+			margin: 0 auto;
+		}
 	}
 	&__input{
 		width: 100%;
@@ -44,11 +49,16 @@
 		}
 	}
 	&__textarea{
-		float: left;
+		float: right;
 		max-width: rem(560px);
 		resize: none;
 		height: rem(178px);
 		overflow-x: hidden;
+		@include apply-to($medium,max){
+			max-width: 90%;
+			float: none;
+			margin: 0 auto rem(30px);
+		}
 	}
 	&__button{
 		margin: 0 auto;

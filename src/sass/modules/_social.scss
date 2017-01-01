@@ -4,6 +4,9 @@
 		padding: 0;
 		text-align: right;
 		padding-top: rem(27px);
+		@include apply-to($medium,max){
+			text-align: center;
+		}
 	}
 	&__item{
 		list-style-type: none;
@@ -15,4 +18,5 @@
 		width: rem(51px);
 		height: rem(51px);
 	}
+
 }

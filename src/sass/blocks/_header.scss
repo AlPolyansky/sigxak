@@ -13,11 +13,39 @@
 	&__title{
 		font-weight: 400;
 		margin-bottom: em(7px);
+		@include apply-to($medium,max){
+			font-size: rem(60px);
+		}
+		
 	}
 	&__desk{
 		margin-bottom: em(8px);
+		@include apply-to($medium,max){
+			font-size: rem(30px);
+		}
+		@include apply-to($xsmall,max){
+			font-size: rem(20px);
+		}
 	}
 	&__info{
 		font-weight: 900;
+		@include apply-to($medium,max){
+			font-size: rem(14px);
+		}
+	}
+}
+
+body{
+	.header{
+		&__title{
+			@include apply-to($xsmall,max){
+				font-size: rem(30px);
+			}
+		}
+		&__desk{
+			@include apply-to($xsmall,max){
+				font-size: rem(20px);
+			}
+		}
 	}
 }

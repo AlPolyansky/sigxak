@@ -13,6 +13,12 @@
 		overflow: hidden;
 		position: relative;
 		cursor: pointer;
+		@include apply-to($small,max){
+			@include col(6);
+		}
+		@include apply-to($xsmall,max){
+			@include col(12);
+		}
 		&:after{
 			content: '';
 			display: block;

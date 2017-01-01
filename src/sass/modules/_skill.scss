@@ -20,6 +20,9 @@
 		font-size: rem(36px);
 		margin: 0;
 		margin-bottom: rem(16px);
+		@include apply-to($xsmall,max){
+			font-size: rem(22px);
+		}
 	}
 	&__text{
 		margin: 0;

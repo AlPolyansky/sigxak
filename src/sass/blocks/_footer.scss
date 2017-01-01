@@ -6,11 +6,29 @@
 	@include clear();
 	&__part{
 		@include col(6);
+		@include apply-to($medium,max){
+			@include col(12);
+		}
 	}
 	&__address{
 		font-style: normal;
 		color: $colorLight;
 		@include col(4);
 		padding: 0 rem(37px);
+		margin-bottom: rem(60px);
+		@include apply-to($medium,max){
+			@include col(6,rem(40px));
+		}
+		
+	}
+}
+
+body{
+	.footer{
+		&__address{
+			@include apply-to($xsmall,max){
+				max-width: 100%;
+			}
+		}
 	}
 }

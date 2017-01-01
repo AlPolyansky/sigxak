@@ -7,6 +7,10 @@
 		margin: 0;
 		padding: 0;
 		display: inline-block;
+		@include apply-to($xsmall,max){
+			font-size: rem(14px);
+			padding: 0 rem(20px);
+		}
 	}
 	&__item{
 		display: inline-block;

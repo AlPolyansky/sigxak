@@ -1,6 +1,9 @@
 .s-about{
 	padding-top: rem(105px);
 	padding-bottom: rem(190px);
+	@include apply-to($xsmall,max){
+		padding-bottom: rem(100px);
+	}
 	&__desk{
 		@include clear();
 		text-align: left;
@@ -14,6 +17,9 @@
 		&:last-child{
 			padding-right: 0;
 		}
+		@include apply-to($medium,max){
+			@include col(12);
+		}
 	}
 	&__text{
 		margin-bottom: rem(107px);
@@ -21,8 +27,17 @@
 	&__users{
 		display: flex;
 		justify-content: space-between;
+		@include apply-to($medium,max){
+			justify-content: center;
+		}
+		@include apply-to($xsmall,max){
+			display: block;
+		}
 	}
 	&__user{
-		
+		@include apply-to($medium,max){
+			margin: 0 rem(20px);
+		}
+
 	}
 }

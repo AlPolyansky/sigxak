@@ -14,6 +14,7 @@ $(document).ready(function(){
 	(function(){
 		$tile.isotope({
 				itemSelector: '.tile__item',
+				//initLayout: false
 			})
 
 		$link.on('click',function(e){
@@ -24,9 +25,6 @@ $(document).ready(function(){
 				filter: selector,
 			})
 		})
-
-
-
 	})();
 
 	

@@ -2,6 +2,9 @@
 	&__menu{
 		background-color: transparent;
 		margin-bottom: rem(87px);
+		@include apply-to($xsmall,max){
+			text-align: left;
+		}
 		.menu__link{
 			color: $colorDark;
 			font-weight: 800;
@@ -11,6 +14,9 @@
 			font-weight: 800;
 			padding-top: 0;
 			padding-bottom: 0;
+			@include apply-to($xsmall,max){
+				margin-bottom: rem(20px);
+			}
 		}
 	}
 }

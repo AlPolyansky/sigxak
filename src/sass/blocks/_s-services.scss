@@ -15,5 +15,13 @@
 		&:nth-child(even){
 			padding-right: 0;
 		}
+		@include apply-to($small,max){
+			@include col(12);
+			//text-align: center;
+			.skill__ico-wrap{
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
 	}
 }

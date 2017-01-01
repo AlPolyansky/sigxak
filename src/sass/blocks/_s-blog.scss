@@ -4,12 +4,12 @@
 	&__articles{
 		display: inline-flex;
 		flex-wrap: wrap;
-		justify-content: flex-start;
+		justify-content: center;
+		@include apply-to(1380px,max){
+			justify-content: center;
+		}
 	}
 	.article{
 		margin-right: rem(20px);
-		&:nth-child(4n+4){
-			margin-right: 0;
-		}
 	}
 }
