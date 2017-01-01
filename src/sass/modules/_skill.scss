@@ -1,0 +1,63 @@
+.skill{
+	overflow: hidden;
+	&:hover{
+		background-color: $colorBody;
+		.skill__link{
+			right: 0;
+		}
+	}
+	&__ico-wrap{
+		height: rem(116px);
+		width: rem(116px);
+		position: relative;
+		background-color: $colorMain;
+		margin-bottom: rem(25px);
+	}
+	&__ico{
+		@include center();
+	}
+	&__title{
+		font-size: rem(36px);
+		margin: 0;
+		margin-bottom: rem(16px);
+	}
+	&__text{
+		margin: 0;
+	}
+	&__link{
+		display: block;
+		font-size: rem(18px);
+		color: $colorBase;
+		text-decoration: none;
+		font-family: $fontExtra;
+		float: right;
+		margin-bottom: rem(18px);
+		margin-right: rem(6px);
+		@include trans(.3s);
+		position: relative;
+		right: -100%;
+	}
+	
+}
+
+
+// ico size
+
+.skill{
+	.i-devises{
+		width: rem(66px);
+		height: rem(58px);
+	}
+	.i-details{
+		width: rem(63px);
+		height: rem(45px);
+	}
+	.i-window{
+		width: rem(55px);
+		height: rem(57px);
+	}
+	.i-watch{
+		width: rem(61px);
+		height: rem(61px);
+	}
+}
